@@ -5,14 +5,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: "Recursive, monospace",
+        sans: "Inter, sans",
       },
     },
   },
   preflight: {
     // Import external stylesheet
     "@import":
-      `url('https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,CRSV,MONO@510,1,1,0.25&display=swap')`,
+      `url('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css"> ')`,
     // Declare font face
   },
 } as Options;

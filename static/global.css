@@ -1,3 +1,5 @@
+@config $text-color: #ffffffda;
+
 *::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -12,11 +14,7 @@
 
 /* fade in text */
 .fade-in {
-  animation: fadeIn ease 6.7s;
-  -webkit-animation: fadeIn ease 6.7s;
-  -moz-animation: fadeIn ease 6.7s;
-  -o-animation: fadeIn ease 6.7s;
-  -ms-animation: fadeIn ease 6.7s;
+  animation: fadeIn ease-in-out 10s;
 }
 
 @keyframes fadeIn {
@@ -29,5 +27,86 @@
 }
 
 .fade-in-scroll {
-  animation: fadeIn ease-in 30s;
+  animation: fadeIn ease-in 50s;
+  opacity: 60%;
+}
+
+@keyframes random {
+  0% {
+    text-transform: capitalize;
+  }
+  25% {
+    text-transform: lowercase;
+  }
+  50% {
+    text-transform: uppercase;
+    /* add glitch effect */
+    letter-spacing: 0.05em;
+    filter: invert(70%);
+    
+
+  }
+  75% {
+    text-transform: capitalize;
+    transform: scale(1.03);
+  }
+  100% {
+    text-transform: lowercase;
+  }
+}
+
+.wip {
+  animation: wip-random infinite 5s;
+
+}
+@keyframes wip-random {
+  0% {
+    text-transform: capitalize;
+  }
+  100% {
+    text-transform: lowercase;
+  }
+}
+.loki {
+  color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .letter1{
+
+      animation: random 2s;
+    mix-blend-mode: screen;
+  }
+  .letter2{
+
+      animation: random 4s;
+    mix-blend-mode: screen;
+  }
+  .letter3{
+
+      animation: random 6s;
+    mix-blend-mode: screen;
+  }
+  .letter4{
+
+      animation: random 9s;
+    mix-blend-mode: screen;
+  }
+  .letter5{
+
+      animation: random 6s;
+    mix-blend-mode: screen;
+  }
+  .letter6{
+
+      animation: random 4s;
+    mix-blend-mode: screen;
+  }
+  .letter7{
+
+      animation: random 7.5s;
+    mix-blend-mode: screen;
+  }
+
 }

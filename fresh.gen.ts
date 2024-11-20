@@ -3,14 +3,16 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $index from "./routes/index.tsx";
-
+import * as $AudioMusic from "./islands/AudioMusic.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/index.tsx": $index,
   },
-  islands: {},
+  islands: {
+    "./islands/AudioMusic.tsx": $AudioMusic,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

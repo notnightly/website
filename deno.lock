@@ -4,7 +4,8 @@
     "jsr:@luca/esbuild-deno-loader@0.11.0": "0.11.0",
     "jsr:@std/bytes@^1.0.2": "1.0.4",
     "jsr:@std/encoding@^1.0.5": "1.0.5",
-    "jsr:@std/path@^1.0.6": "1.0.8"
+    "jsr:@std/path@^1.0.6": "1.0.8",
+    "npm:gsap@*": "3.12.5"
   },
   "jsr": {
     "@luca/esbuild-deno-loader@0.11.0": {
@@ -25,6 +26,11 @@
       "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
     }
   },
+  "npm": {
+    "gsap@3.12.5": {
+      "integrity": "sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ=="
+    }
+  },
   "redirects": {
     "https://deno.land/x/fresh/dev.ts": "https://deno.land/x/fresh@1.7.3/dev.ts",
     "https://deno.land/x/fresh/plugins/twind.ts": "https://deno.land/x/fresh@1.7.3/plugins/twind.ts",
@@ -33,6 +39,7 @@
     "https://esm.sh/v135/@types/babel__helper-validator-identifier@~7/index.d.ts": "https://esm.sh/v135/@types/babel__helper-validator-identifier@7.15.2/index.d.ts"
   },
   "remote": {
+    "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js": "ad33c2df9ada8a663c2147357828f980d0b7ca731ef33eb3c6e4f327c3b2cda5",
     "https://deno.land/std@0.208.0/assert/assert.ts": "9a97dad6d98c238938e7540736b826440ad8c1c1e54430ca4c4e623e585607ee",
     "https://deno.land/std@0.208.0/assert/assertion_error.ts": "4d0bde9b374dfbcbe8ac23f54f567b77024fb67dbb1906a852d67fe050d42f56",
     "https://deno.land/std@0.208.0/fs/_util.ts": "fbf57dcdc9f7bc8128d60301eece608246971a7836a3bb1e78da75314f08b978",
@@ -382,10 +389,12 @@
     "https://esm.sh/stable/preact@10.11.0/denonext/debug.js": "c4648f64516c6cbd45d290c28098516aaa41e3d3e180c52ae913cbb9920f8b28",
     "https://esm.sh/stable/preact@10.11.0/denonext/devtools.js": "60c737c9bb58ee897f9d2b917e2491fcd647340cae168fc00e21bf8624a4785b",
     "https://esm.sh/stable/preact@10.11.0/denonext/hooks.js": "8353911c6f4ab0e0c8ac0f4421ece58730f2ac701a995721f73ca13b10d553f6",
+    "https://esm.sh/stable/preact@10.11.0/denonext/hooks/src.js": "9379f5a9f816b9b8a0e112fcd526244537171e4a0cb53b9d5c6eff0144e0bd51",
     "https://esm.sh/stable/preact@10.11.0/denonext/jsx-runtime.js": "03c711c4a0eaf1489d807db5611a94f4e34e9c25763c0da060014964ff95c80b",
     "https://esm.sh/stable/preact@10.11.0/denonext/preact.mjs": "71306b68971e656b4c8bff31e261528c4fe14bf87f8e65f214b671f45bef2d31",
     "https://esm.sh/twind@0.16.17": "e9d05cb1e7a4ccb5b44c4409415bc02c26822a548c7ac8c2f227c11fcb124c89",
     "https://esm.sh/twind@0.16.17/sheets": "31cc03d2acccf29b80d22712026be08667f61a853ba03bb32842ffb1a0e61c12",
+    "https://esm.sh/v128/preact@10.11.0/hooks/src/index.js": "748495d05ea55b2c0339944754b3117aae5886e7707b9717a5b4c7da1ba9e8c5",
     "https://esm.sh/v135/@babel/helper-validator-identifier@7.22.20/denonext/helper-validator-identifier.mjs": "1ad312a9040d1f3b096e90a3e6a9da7ecfc99662140852fe3862a316c2591c93",
     "https://esm.sh/v135/@preact/signals-core@1.0.1/X-ZS8q/denonext/signals-core.mjs": "87d32b7ba224d7061ba8477c745a2fde80eb51fe8e61d4c304a64b60d67e55aa",
     "https://esm.sh/v135/@preact/signals@1.0.3/X-ZS8q/denonext/signals.mjs": "ef6a7bc71971b9224cf7a30d9e501d98ec49f5b8807d3b28b0529b14acb39166",

@@ -1,5 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import AudioMusic from "../islands/AudioMusic.tsx";
+const svg = asset("/vinyl.svg");
 export default function Home() {
   return (
     <>
@@ -44,7 +45,14 @@ export default function Home() {
             <h1 class="text-5xl sm:text-[200px] font-dirtyLine font-bold bg-gradient-to-tr from-green-200 to-indigo-200 bg-clip-text text-transparent animate-text">
               Adrenaline
             </h1>
-            <AudioMusic text="Listen" />
+            <AudioMusic>
+              <div class="flex">
+                <div class="pr-2">
+                  <img src={svg} class="w-7 h-7 " />
+                </div>
+                <p class="text-sm sm:text-2xl">play</p>
+              </div>
+            </AudioMusic>
           </div>
         </div>
       </body>

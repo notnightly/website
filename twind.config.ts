@@ -5,14 +5,32 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: "Inter, sans",
+        dirtyLine: "Dirtyline",
+      },
+      animation: {
+        text: "text 5s ease infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
     },
   },
   preflight: {
     // Import external stylesheet
-    "@import":
-      `url('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css"> ')`,
-    // Declare font face
+    "@font-face": [
+      {
+        fontFamily: "Dirtyline",
+        src: "url('/font.ttf')",
+      },
+    ],
   },
 } as Options;

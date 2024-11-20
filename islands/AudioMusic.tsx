@@ -1,6 +1,6 @@
 import { asset } from "$fresh/runtime.ts";
 
-export default function AudioMusic(props: any) {
+export default function AudioMusic(props: { children: string }) {
   const playAudio = (url: string) => {
     new Audio(url).play();
   };

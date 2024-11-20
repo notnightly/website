@@ -21,7 +21,7 @@ export default function Home() {
             {/**Make typerwrite class  */}
             <div>
               <div class="container">
-                <h2 class="loki text-5xl sm:text-[230px] font-dirtyLine font-bold  fade-in">
+                <h2 class="loki text-6xl sm:text-[230px] font-dirtyLine font-bold  fade-in">
                   <p class="letter1 bg-gradient-to-tr from-green-200 to-indigo-200 bg-clip-text text-transparent animate-text">
                     N
                   </p>
@@ -66,10 +66,10 @@ export default function Home() {
           text-center"
             id="vid"
           >
-            <h1 class="text-5xl sm:text-[200px] font-dirtyLine font-bold bg-gradient-to-tr from-green-200 to-red-500 bg-clip-text text-transparent animate-text">
+            <h1 class="text-6xl sm:text-[200px] font-dirtyLine font-bold bg-gradient-to-tr from-green-200 to-red-500 bg-clip-text text-transparent animate-text">
               Adrenaline
             </h1>
-            <div class="flex justify-center gap-3">
+            <div class="flex justify-center gap-3 ">
               <AudioMusic>
                 <div class="flex">
                   <div class="pr-2">

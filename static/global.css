@@ -43,8 +43,6 @@
     /* add glitch effect */
     letter-spacing: 0.05em;
     filter: invert(70%);
-    
-
   }
   75% {
     text-transform: capitalize;
@@ -57,7 +55,6 @@
 
 .wip {
   animation: wip-random infinite 5s;
-
 }
 @keyframes wip-random {
   0% {
@@ -68,45 +65,37 @@
   }
 }
 .loki {
-  color: #EEEEEE;
+  color: #eeeeee;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  .letter1{
 
-      animation: random 2s;
+  .letter1 {
+    animation: random 2s;
     mix-blend-mode: screen;
   }
-  .letter2{
-
-      animation: random 4s;
+  .letter2 {
+    animation: random 4s;
     mix-blend-mode: screen;
   }
-  .letter3{
-
-      animation: random 6s;
+  .letter3 {
+    animation: random 6s;
     mix-blend-mode: screen;
   }
-  .letter4{
-
-      animation: random 9s;
+  .letter4 {
+    animation: random 9s;
     mix-blend-mode: screen;
   }
-  .letter5{
-
-      animation: random 6s;
+  .letter5 {
+    animation: random 6s;
     mix-blend-mode: screen;
   }
-  .letter6{
-
-      animation: random 4s;
+  .letter6 {
+    animation: random 4s;
     mix-blend-mode: screen;
   }
-  .letter7{
-
-      animation: random 7.5s;
+  .letter7 {
+    animation: random 7.5s;
     mix-blend-mode: screen;
   }
-
 }

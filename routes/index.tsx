@@ -1,5 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
-import AudioMusic from "../islands/AudioMusic.tsx";
+import Button from "../islands/Button.tsx";
+
 const vinylSvg = asset("/vinyl.svg");
 const spotifySvg = asset("/spotify.svg");
 export default function Home() {
@@ -70,25 +71,22 @@ export default function Home() {
               Adrenaline
             </h1>
             <div class="flex justify-center gap-3 ">
-              <AudioMusic>
+              <Button audio>
                 <div class="flex">
                   <div class="pr-2">
                     <img src={vinylSvg} class="w-5 h-5 sm:w-7 sm:h-7" />
                   </div>
-                  <p class="text-sm sm:text-2xl">preview</p>
+                  <p class="text-sm sm:text-xl">preview</p>
                 </div>
-              </AudioMusic>
-              <a
-                href="https://open.spotify.com/track/7M7VbBUVoOk627l8EoMCfl?si=c0a61f04bac54f61"
-                class="font-dirtyLine text-[#181818] text-sm sm:text2xl border-2 border-[#181818] rounded-lg p-2 mt-5 "
-              >
+              </Button>
+              <Button href="https://open.spotify.com/track/7M7VbBUVoOk627l8EoMCfl?si=c0a61f04bac54f61">
                 <div class="flex">
                   <div class="pr-2">
                     <img src={spotifySvg} class="w-5 h-5 sm:w-7 sm:h-7" />
                   </div>
-                  <p class="text-sm sm:text-2xl">spotify</p>
+                  <p class="text-sm sm:text-xl">spotify</p>
                 </div>
-              </a>
+              </Button>
             </div>
           </div>
         </div>

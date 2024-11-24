@@ -1,4 +1,4 @@
-## website
+## notnightly/website
 
 This project is a website that showcases myself. It is built using Fresh and is
 designed to be responsive and accessible. It uses Tailwind CSS for styling and
@@ -13,7 +13,7 @@ To run this website locally, follow these steps:
 3. Open your browser and go to `localhost:8000`
 
 Alternatively, you can access the website at
-[subwoofer.deno.dev](https://subwoofer.deno.dev)
+[nightly.deno.dev](https://nightly.deno.dev)
 
 ### License
 

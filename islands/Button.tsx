@@ -1,4 +1,3 @@
-// create component button
 import { asset } from "$fresh/runtime.ts";
 export default function Button(
   // deno-lint-ignore no-explicit-any

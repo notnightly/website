@@ -1,4 +1,4 @@
-@config $text-color: #ffffffda;
+@config $text-color: #ffffff;
 
 *::-webkit-scrollbar {
   width: 0.2em;
@@ -16,6 +16,18 @@
   animation: fadeIn ease-in-out 10s;
 }
 
+.fade-in-scroll {
+  animation: fadeInText ease-in-out 10s;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -25,53 +37,38 @@
   }
 }
 
-.fade-in-scroll {
-  animation: fadeIn ease-in 50s;
-  opacity: 60%;
-}
 
 @keyframes random {
-  0% {
+  0% {    
     text-transform: capitalize;
   }
   25% {
     text-transform: lowercase;
+    text-shadow: 0 0 0.3rem #0ff;
   }
   50% {
     text-transform: uppercase;
-    /* add glitch effect */
-    letter-spacing: 0.03em;
-    filter: invert(75%);
+    
   }
   75% {
     text-transform: capitalize;
-    transform: scale(1.03);
+    
   }
   100% {
     text-transform: lowercase;
   }
 }
 
-.wip {
-  animation: wip-random infinite 5s;
-}
-@keyframes wip-random {
-  0% {
-    text-transform: capitalize;
-  }
-  100% {
-    text-transform: lowercase;
-  }
-}
 .loki {
   color: #eeeeee;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  filter: drop-shadow(0 0 0.3rem #0ff);
   .letter1 {
     animation: random 2s;
     mix-blend-mode: screen;
+
   }
   .letter2 {
     animation: random 4s;

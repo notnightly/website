@@ -8,7 +8,7 @@ export default function Letter(props: { number: number; children: string }) {
   return (
     <>
       <p
-        class={`letter${props.number} bg-gradient-to-tr ${gradient} bg-clip-text text-transparent animate-text`}
+        class={`letter${props.number} bg-gradient-to-tr ${gradient} bg-clip-text text-transparent`}
       >
         {props.children}
       </p>

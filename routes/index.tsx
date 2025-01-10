@@ -16,19 +16,17 @@ export default function Home() {
       </Head>
       <body class="bg-black scroll-smooth">
         <Hero>
-          <h2 class="loki text-6xl sm:text-[230px] font-dirtyLine font-bold fade-in">
+          <h2 class="loki text-6xl sm:text-[220px] font-bold fade-in font-serif">
             <Letter number={1}>N</Letter>
-            <Letter number={2}>i</Letter>
-            <Letter number={3}>g</Letter>
-            <Letter number={4}>h</Letter>
-            <Letter number={5}>t</Letter>
-            <Letter number={6}>l</Letter>
-            <Letter number={7}>y</Letter>
+            <Letter number={2}>y</Letter>
+            <Letter number={1}>t</Letter>
+            <Letter number={2}>l</Letter>
+            <Letter number={1}></Letter>
           </h2>
           <div class="mt-10">
             <a
               href="#wip"
-              class="text-[#EEEEEE] text-sm sm:text2xl font-dirtyLine fade-in-scroll"
+              class="text-[#EEEEEE] text-sm sm:text2xl font-dirtyLine opacity-5 fade-in-scroll"
             >
               Scroll down :)
             </a>
